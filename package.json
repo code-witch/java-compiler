@@ -11,11 +11,26 @@
         "Other"
     ],
     "activationEvents": [
+        "onCommand:extension.compile",
+        "onCommand:extension.run",
+        "onCommand:extension.buttonClick",
         "onCommand:extension.sayHello"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
+            {
+                "command": "extension.compile",
+                "title": "Java: Compile"
+            },
+            {
+                "command": "extension.run",
+                "title": "Java: Run"
+            },
+            {
+                "command": "extension.buttonClick",
+                "title": "Run"
+            },
             {
                 "command": "extension.sayHello",
                 "title": "Hello World"
