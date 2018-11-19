@@ -2,7 +2,7 @@
     "name": "java-compiler",
     "displayName": "Java Compiler",
     "description": "Compiles Java and then runs it.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "code-witch",
     "engines": {
         "vscode": "^1.29.0"
@@ -13,8 +13,7 @@
     "activationEvents": [
         "onCommand:extension.compile",
         "onCommand:extension.run",
-        "onCommand:extension.buttonClick",
-        "onCommand:extension.sayHello"
+        "onCommand:extension.buttonClick"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -30,10 +29,6 @@
             {
                 "command": "extension.buttonClick",
                 "title": "Run"
-            },
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World"
             }
         ]
     },
